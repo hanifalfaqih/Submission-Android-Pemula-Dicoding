@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Books App</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="book_photo">Book photo</string>
+    <string name="rating">Rating</string>
+    <string name="profile">Profile</string>
+    <string name="price">Price</string>
+    <string name="buy">Beli</string>
+    <string name="detail_book">Detail Buku</string>
+    <string name="total_page">Total Halaman</string>
+    <string name="isi">Isi</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="isbn">ISBN</string>
+    <string name="languange">Bahasa</string>
+    <string name="publisher">Penerbit</string>
+    <string name="description">Deskripsi</string>
+    <string name="rojikan">Rojikan</string>
+    <string name="email">rojichan@gmail.com</string>
+    <string name="books_app">Books App</string>
+</resources>

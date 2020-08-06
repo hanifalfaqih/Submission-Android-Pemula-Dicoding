@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="horizontal"
+                style="@style/DefaultWidthHeight"
+                android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/img_book_photo"
+            android:contentDescription="@string/book_photo"
+            android:layout_width="65dp"
+            android:layout_height="98dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            tools:src="@android:color/darker_gray"/>
+
+    <LinearLayout
+            style="@style/DefaultWidthHeight"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/img_book_photo"
+            android:layout_toRightOf="@id/img_book_photo"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_title"
+                style="@style/DefaultWidthHeight"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/title"
+                android:textColor="@android:color/black"/>
+
+        <TextView
+                android:id="@+id/tv_author"
+                style="@style/DefaultWidthHeight"
+                android:layout_marginBottom="2dp"
+                tools:text="@string/author"/>
+        <TextView
+                android:id="@+id/tv_price"
+                style="@style/DefaultWidthHeight"
+                tools:text="@string/price"
+                android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

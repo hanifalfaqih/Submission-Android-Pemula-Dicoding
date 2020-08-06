@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_book_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+    <LinearLayout style="@style/DefaultWidthHeight"
+                  android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="12dp"
+                android:background="#FFFF"
+                android:drawableStart="@drawable/ic_star"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                tools:text="@string/isi"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+
+        <FrameLayout
+                style="@style/DefaultWidthHeight">
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="500dp"
+                       android:id="@+id/img_book_photo"
+                       tools:src="@android:color/darker_gray"
+                       android:padding="8dp"
+                       android:paddingBottom="8dp"/>
+
+
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/tv_title"
+                style="@style/DefaultWidthHeight"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/title"
+                android:textAlignment="center"/>
+
+        <TextView
+                android:id="@+id/tv_author"
+                style="@style/DefaultWidthHeight"
+                android:layout_marginBottom="8dp"
+                tools:text="@string/author"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/tv_price"
+                style="@style/DefaultWidthHeight"
+                tools:text="@string/price"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"
+                android:textAlignment="center"/>
+
+        <Button
+                android:id="@+id/btn_buy"
+                style="@style/ButtonGeneral"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/buy"/>
+
+        <TextView
+                style="@style/DefaultWidthHeight"
+                android:text="@string/detail_book"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"/>
+
+        <TableLayout
+                style="@style/DefaultWidthHeight"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+            <TableRow
+                    style="@style/DefaultWidthHeight"
+                    android:layout_marginBottom="8dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/total_page"/>
+
+                <TextView
+                        android:id="@+id/tv_total_page"
+                        style="@style/DefaultWidthHeight"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        tools:text="@string/isi"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                    style="@style/DefaultWidthHeight"
+                    android:layout_marginBottom="8dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/release_date"/>
+
+                <TextView
+                        android:id="@+id/tv_release_date"
+                        style="@style/DefaultWidthHeight"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        tools:text="@string/isi"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                    style="@style/DefaultWidthHeight"
+                    android:layout_marginBottom="8dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/isbn"/>
+
+                <TextView
+                        android:id="@+id/tv_isbn"
+                        style="@style/DefaultWidthHeight"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        tools:text="@string/isi"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                    style="@style/DefaultWidthHeight"
+                    android:layout_marginBottom="8dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/languange"/>
+
+                <TextView
+                        android:id="@+id/tv_languange"
+                        style="@style/DefaultWidthHeight"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        tools:text="@string/isi"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                    style="@style/DefaultWidthHeight"
+                    android:layout_marginBottom="8dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/publisher"/>
+
+                <TextView
+                        android:id="@+id/tv_publisher"
+                        style="@style/DefaultWidthHeight"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        tools:text="@string/isi"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                    style="@style/DefaultWidthHeight"
+                    android:layout_marginBottom="8dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/description"/>
+
+                <TextView
+                        android:id="@+id/tv_description"
+                        style="@style/DefaultWidthHeight"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        tools:text="@string/isi"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
